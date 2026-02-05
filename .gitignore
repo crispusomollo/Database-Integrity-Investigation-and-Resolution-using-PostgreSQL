@@ -1,0 +1,13 @@
+# Logs
+*.log
+
+# Temp files
+*.txt
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local configs
+psql_env
