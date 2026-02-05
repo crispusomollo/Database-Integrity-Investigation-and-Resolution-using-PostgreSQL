@@ -53,9 +53,9 @@ A dedicated step-by-step installation guide is available here:
 ➡ **[INSTALL.md](INSTALL.md)**
 
 Simply clone the repository and run:
-
+```
 bash install.sh
-
+```
 All setup, data loading, and demo execution are fully automated.
 
 ---
@@ -71,7 +71,7 @@ All setup, data loading, and demo execution are fully automated.
 ---
 
 ## Project Structure
-
+```
 01-setup/                 → Table creation  
 02-initial-data/          → Clean sample data  
 03-problem-simulation/    → Introduce data issues  
@@ -81,7 +81,7 @@ All setup, data loading, and demo execution are fully automated.
 07-testing/               → Validation scripts  
 08-monitoring-governance/ → Views and auditing  
 scripts/                  → Automation scripts  
-
+```
 ---
 
 ## Features
