@@ -41,7 +41,7 @@ This project reproduces the problem and implements a structured PostgreSQL-based
 ---
 
 ## Project Structure
-
+```
 01-setup/                 → Table creation  
 02-initial-data/          → Clean sample data  
 03-problem-simulation/    → Introduce data issues  
@@ -51,14 +51,14 @@ This project reproduces the problem and implements a structured PostgreSQL-based
 07-testing/               → Validation scripts  
 08-monitoring-governance/ → Views and auditing  
 scripts/                  → Automation scripts  
-
+```
 ---
 
 ## How to Run
 
 Clone the repository and execute:
 
-bash install.sh
+```bash install.sh```
 
 This will automatically:
 
@@ -95,7 +95,9 @@ This will automatically:
 ## Example Demo Queries
 
 SELECT * FROM asset_conflict_report;
+
 SELECT * FROM missing_timesheets;
+
 SELECT * FROM audit_log ORDER BY changed_at DESC;
 
 ---
