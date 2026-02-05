@@ -1,3 +1,5 @@
+<img width="747" height="511" alt="image" src="https://github.com/user-attachments/assets/d2111ac9-75f7-4e4b-8e13-0f3fa59a9a12" />
+
 # PostgreSQL ERP Data Integrity Project
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
