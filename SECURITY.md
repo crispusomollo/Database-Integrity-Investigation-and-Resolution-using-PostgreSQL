@@ -21,10 +21,11 @@ This project demonstrates several security best practices:
 ### 3. Least Privilege
 
 Recommended roles:
-
+```
 CREATE ROLE app_user;
-GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA public TO app_user;
 
+GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA public TO app_user;
+```
 Audit tables should be restricted to administrators only.
 
 ### 4. Error Handling
