@@ -43,10 +43,13 @@ The most important components to review are:
 ### 4. Suggested Demo Queries
 
 After installation, you can run:
-
+```
 SELECT * FROM asset_conflict_report;
+
 SELECT * FROM missing_timesheets;
+
 SELECT * FROM audit_log ORDER BY changed_at DESC LIMIT 10;
+```
 
 ### 5. What This Project Demonstrates
 
