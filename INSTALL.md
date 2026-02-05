@@ -12,10 +12,11 @@ This guide explains how to deploy and run the PostgreSQL ERP Integrity Project.
 ## Setup Steps
 
 1. Clone the repository:
+```
+git clone https://github.com/crispusomollo/Database-Integrity-Investigation-and-Resolution-using-PostgreSQL.git
 
-git clone https://github.com/YOUR_USERNAME/postgresql-erp-integrity-project.git
-cd postgresql-erp-integrity-project
-
+cd database-integrity-investigation-and-resolution-using-postgresql
+```
 2. Ensure PostgreSQL is installed and running:
 
 sudo systemctl status postgresql
@@ -25,9 +26,9 @@ sudo systemctl status postgresql
 chmod +x install.sh
 
 4. Run the installer:
-
+```
 bash install.sh
-
+```
 ## What the Installer Does
 
 The installer performs the following automatically:
@@ -45,15 +46,17 @@ The installer performs the following automatically:
 ## Verifying Installation
 
 After installation, connect to the database:
-
+```
 psql -d erp_integrity_lab
-
+```
 Run:
-
+```
 SELECT * FROM asset_conflict_report;
-SELECT * FROM missing_timesheets;
-SELECT * FROM audit_summary;
 
+SELECT * FROM missing_timesheets;
+
+SELECT * FROM audit_summary;
+```
 All integrity reports should return zero rows after successful setup.
 
 ## Troubleshooting
