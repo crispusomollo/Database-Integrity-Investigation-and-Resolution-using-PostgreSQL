@@ -32,14 +32,27 @@ This project follows a layered PostgreSQL integrity management architecture.
 
 Clean Data → Introduce Issues → Detect Problems → Cleanup → Enforce Constraints → Continuous Monitoring
 
-## Key Objects
+## Technology Components
 
-- employees
-- assets
-- asset_assignment
-- timesheets
+| Layer | Tools Used |
+|------|------------|
+| Database Engine | PostgreSQL |
+| Operating System | Ubuntu Linux |
+| Automation | Bash scripting |
+| Client Tools | PgAdmin, HeidiSQL |
+| Auditing | PL/pgSQL Triggers |
+| Monitoring | SQL Views |
 
-## Monitoring Views
+## Key Database Objects
+
+### Core Tables
+
+- `employees`
+- `assets`
+- `asset_assignment`
+- `timesheets`
+
+### Monitoring Views
 
 - asset_conflict_report
 - missing_timesheets
@@ -52,12 +65,6 @@ Clean Data → Introduce Issues → Detect Problems → Cleanup → Enforce Cons
 - Table-agnostic implementation
 - Historical change tracking
 
-## Security Model
-
-- Database-level constraints
-- Role-based access
-- Immutable audit logs
-
 ## Deployment Architecture
 
 Ubuntu Linux  
@@ -68,3 +75,37 @@ SQL Scripts + Bash Automation
 ↓  
 Client Tools (PgAdmin / HeidiSQL)
 
+---
+
+## Security and Governance
+
+- Database-level constraints
+- Immutable audit logs
+- Role-based access
+- Constraint-driven data quality
+
+---
+
+## Extensibility
+
+This architecture can be extended with:
+
+- Partitioned audit tables
+- Advanced alerting
+- API integration
+- BI reporting tools
+
+---
+
+## Summary
+
+The architecture demonstrates practical DBA skills including:
+
+- Schema design
+- Integrity enforcement
+- Troubleshooting
+- Automation
+- Monitoring
+- Auditing
+
+All implemented using PostgreSQL native features.
