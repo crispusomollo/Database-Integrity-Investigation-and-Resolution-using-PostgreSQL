@@ -1,4 +1,4 @@
-<img width="747" height="511" alt="image" src="https://github.com/user-attachments/assets/d2111ac9-75f7-4e4b-8e13-0f3fa59a9a12" />
+<img width="1286" height="857" alt="image" src="https://github.com/user-attachments/assets/cb8e808f-3313-451c-bd24-8b2d8c16ae92" />
 
 # PostgreSQL ERP Data Integrity Project
 
