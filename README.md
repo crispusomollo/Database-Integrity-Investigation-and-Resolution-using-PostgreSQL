@@ -58,7 +58,9 @@ scripts/                  → Automation scripts
 
 Clone the repository and execute:
 
-```bash install.sh```
+```
+bash install.sh
+```
 
 This will automatically:
 
@@ -93,13 +95,13 @@ This will automatically:
 ---
 
 ## Example Demo Queries
-
+```
 SELECT * FROM asset_conflict_report;
 
 SELECT * FROM missing_timesheets;
 
 SELECT * FROM audit_log ORDER BY changed_at DESC;
-
+```
 ---
 
 ## Author
