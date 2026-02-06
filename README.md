@@ -1,4 +1,4 @@
-<img width="747" height="511" alt="image" src="https://github.com/user-attachments/assets/d2111ac9-75f7-4e4b-8e13-0f3fa59a9a12" />
+<img width="1286" height="857" alt="image" src="https://github.com/user-attachments/assets/cb8e808f-3313-451c-bd24-8b2d8c16ae92" />
 
 # PostgreSQL ERP Data Integrity Project
 
@@ -12,33 +12,61 @@ This project demonstrates a practical PostgreSQL database integrity solution for
 ### Business Scenario
 During month-end ERP reporting, the Finance team identified inconsistencies:
 
-- Assets appearing assigned to multiple users
-- Approved timesheets missing from financial reports
-- Data conflicts affecting reconciliation
+- Assets appearing assigned to multiple users  
+- Approved timesheets missing from financial reports  
+- Data conflicts affecting reconciliation  
 
 This project reproduces the problem and implements a structured PostgreSQL-based solution.
 
 ---
 
+## For Interview Reviewers
+
+To make evaluation easier, please use the following guides:
+
+- 📌 **How to Review This Project:** [REVIEWERS_NOTE.md](REVIEWERS_NOTE.md)  
+- 🛠 **Installation Guide:** [INSTALL.md](INSTALL.md)  
+- 🏗 **Architecture Overview:** [ARCHITECTURE.md](ARCHITECTURE.md)  
+- 🔒 **Security Notes:** [SECURITY.md](SECURITY.md)  
+- 🧪 **Example Demo Queries:** [EXAMPLE_QUERIES.md](EXAMPLE_QUERIES.md)
+
+These documents provide a structured path for quickly understanding and testing the project.
+
+---
+
 ## What This Project Demonstrates
 
-- PostgreSQL schema design
-- Data integrity enforcement using constraints
-- Data anomaly detection
-- Cleanup of historical bad data
-- Auditing using triggers
-- Monitoring and governance
-- Automation with Bash scripting
+- PostgreSQL schema design  
+- Data integrity enforcement using constraints  
+- Data anomaly detection  
+- Cleanup of historical bad data  
+- Auditing using triggers  
+- Monitoring and governance  
+- Automation with Bash scripting  
+
+---
+
+## Installation
+
+A dedicated step-by-step installation guide is available here:
+
+➡ **[INSTALL.md](INSTALL.md)**
+
+Simply clone the repository and run:
+```
+bash install.sh
+```
+All setup, data loading, and demo execution are fully automated.
 
 ---
 
 ## Technology Stack
 
-- PostgreSQL
-- Ubuntu Linux
-- Bash automation
-- SQL constraints and triggers
-- PgAdmin / HeidiSQL (client tools)
+- PostgreSQL  
+- Ubuntu Linux  
+- Bash automation  
+- SQL constraints and triggers  
+- PgAdmin / HeidiSQL (client tools)  
 
 ---
 
@@ -54,27 +82,6 @@ This project reproduces the problem and implements a structured PostgreSQL-based
 08-monitoring-governance/ → Views and auditing  
 scripts/                  → Automation scripts  
 ```
----
-
-## How to Run
-
-Clone the repository and execute:
-
-```
-bash install.sh
-```
-
-This will automatically:
-
-1. Create the database  
-2. Build schema  
-3. Load sample data  
-4. Introduce integrity problems  
-5. Detect issues  
-6. Clean bad data  
-7. Apply constraints  
-8. Enable auditing  
-
 ---
 
 ## Features
@@ -96,18 +103,19 @@ This will automatically:
 
 ---
 
-## Example Demo Queries
-```
-SELECT * FROM asset_conflict_report;
+## Recommended Review Path
 
-SELECT * FROM missing_timesheets;
+If you are reviewing this project for interview or assessment purposes:
 
-SELECT * FROM audit_log ORDER BY changed_at DESC;
-```
+1. Read [ARCHITECTURE.md](ARCHITECTURE.md) to understand the design  
+2. Follow [INSTALL.md](INSTALL.md) to deploy the demo  
+3. Use [EXAMPLE_QUERIES.md](EXAMPLE_QUERIES.md) to test functionality  
+4. Review [SECURITY.md](SECURITY.md) for governance approach  
+5. Check [REVIEWERS_NOTE.md](REVIEWERS_NOTE.md) for evaluation guidance  
+
 ---
 
 ## Author
 
-Crispus Omollo  
+**Crispus Omollo**  
 PostgreSQL DBA Portfolio Project
-
