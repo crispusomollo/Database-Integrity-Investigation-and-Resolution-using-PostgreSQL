@@ -18,13 +18,13 @@ git clone https://github.com/crispusomollo/Database-Integrity-Investigation-and-
 cd database-integrity-investigation-and-resolution-using-postgresql
 ```
 2. Ensure PostgreSQL is installed and running:
-
+```
 sudo systemctl status postgresql
-
+```
 3. Make installer executable:
-
+```
 chmod +x install.sh
-
+```
 4. Run the installer:
 ```
 bash install.sh
